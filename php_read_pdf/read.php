@@ -2,6 +2,8 @@
 
 $file = "CV_Foysal_PHP.pdf";
 if (file_exists($file)) {
+
+
     header('Content-type: application/pdf');
     header('Content-Disposition: inline; filename=" ' . $file . ' " ');
     header('Content-Transfer-Encoding: binary');

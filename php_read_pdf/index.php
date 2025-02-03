@@ -1,5 +1,9 @@
 <?php 
-    if(isset($_POST['submitt'])){
+
+    $file ="CV_Foysal_PHP.pdf";
+    $file_size = filesize($file);
+
+    if(isset($_POST['submit'])){
         header("Location:read.php");
     }
 ?>
@@ -25,8 +29,9 @@
         </div>
         <br><br><br><br>
         <div class="wrapper">
-            <form action="" method="post">
-                <button type="submit" name="submitt" value="submit">Read PDF</button>
+            <form action="" method="POST">
+                <button type="submit" name="submit" value="submit">Read PDF</button>
+                <p>File Size: <?php echo round($file_size/1024,2)?> KB</p>
             </form>
         </div>
 
