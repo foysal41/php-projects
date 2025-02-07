@@ -24,7 +24,7 @@ input{
 	width: 15%;
 }
 
-#loginbtn{
+.btn{
 	padding: 5px;
 	font-size: 15px;
 	background-color: #328DC0;
